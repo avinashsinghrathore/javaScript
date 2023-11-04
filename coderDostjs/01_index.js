@@ -97,12 +97,49 @@
 
 
 //Array
+// let fruits = ['apple', "orange","mango","banana"]
+//how to access array
+// console.log(fruits[1]);
 
-let fruits = ['apple', "orange","mango","banana"]
+//modify array
+// fruits[0] = "avacado"
+// console.log(fruits);
 
-console.log(fruits[1]);
+//array methods
+// join
+// console.log(fruits.join(" - "));
 
+// indexOf
+// console.log(fruits.indexOf("mango"));
 
+// concatinate
+// let secArray = ["avacado","dragon fruit", "water melon"]
+// let modifiedList = fruits.concat(secArray)
+// console.log(modifiedList);
+
+// console.log(modifiedList.length);
+
+// push method 
+// console.log(modifiedList.push("papaya")); // return length
+// console.log(modifiedList);
+
+// pop
+// console.log(modifiedList.pop());
+
+//--------------------------------------------------------------------------------------------
+// loops
+
+// for loop
+
+// for(let i = 0; i <= 10; i++) {
+//     console.log("hello lucifer", i);
+// }
+
+let items = ["avacado","apple","custard apple","mango","kiwi","kamalam"]
+
+for(let i = 0; i < items.length; i++) {
+    console.log(items);
+}
 
 
 
