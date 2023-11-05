@@ -135,11 +135,79 @@
 //     console.log("hello lucifer", i);
 // }
 
-let items = ["avacado","apple","custard apple","mango","kiwi","kamalam"]
+// let items = ["avacado","apple","custard apple","mango","kiwi","kamalam"]
 
-for(let i = 0; i < items.length; i++) {
-    console.log(items);
-}
+// for(let i = 0; i < items.length; i++) {
+//     console.log(items[i] , i);
+// }
+
+// while loop
+// let i = 1;
+// while ( i <= 5) {
+//     console.log("hello prime", i);
+//     i++;
+// }
+
+
+
+// do-while
+
+// let i = 1
+// do{
+//     console.log("run atleats one time");
+//     i++;
+// }while(i <= 1) // 
+//------------------------------------------------------------------------
+
+//if, eles, else-if statements
+//-------------------------------------------------------------------------
+
+//functions
+
+//declaration
+// function functionName(params) {
+//     console.log("hello idiots");
+// }
+// function call
+// functionName()
+
+//function expression
+// let fun = function() {
+//     console.log("example of function expression");
+// }
+//calling function expression
+// fun()
+
+// passing value ( arguments and parameters)
+// let invitation = function(name) {  //name is parameters and value we are passing is argument
+//     console.log(`hey ${name} you are invited for party`);
+// }
+
+// invitation("avinash")
+// invitation("Aarav") 
+//----------------------------------------------------------------------------------------------
+// arrow function
+
+// let arrowFunction = () => {
+//     console.log("hello");
+// }
+//---------------------------------------------------------------------------------------------
+// passing function as an argument(high order function example)
+
+// let upperCase = function (str) {
+//     return str.toUpperCase();      
+// }
+
+// let lowerCase = function(str) {
+//     return str.toLowerCase()
+// }
+
+// let transform = function(str, fun) {
+//     return fun(str)
+// }
+
+// // console.log(transform("hello aarav", upperCase));
+// console.log(transform("HELLO AVINASH", lowerCase));
 
 
 
