@@ -447,5 +447,115 @@
 //     ul.append(li)
 // })
 //-----------------------------------------------------------------------------------------------------------------
+// "Form"
+//-----------------------------------------------------------------------------------------------------------------
+//  "Array"
 
+//  reverse --> method --> this will change the original array (mutating method)
+// let letters = ["a","b","c","d","e"]
+// console.log(letters);
+// let reverseLetters = letters.reverse()
+// console.log(reverseLetters); 
+// console.log(letters);
+ 
+// concate
+// let nums = [1,2,3,4,5,6,7,8]
+// console.log(nums.concat(letters));
+
+
+//  join --> joins the array element and changes to string 
+
+//  slice --> this method used to extract part of the array
+//          --> return new array of extracted array
+
+//  splice 
+//  used to add new elements into the array
+//  Array.splice(index,deleteValue,valueToBeAdded)
+//  return deleted items in the form of array
+
+// let nums = [2,1,5,8,4,3,9,7]
+// console.log(nums);
+// let updatedValue = nums.splice(2,3,100)
+// console.log("updated value is : ", updatedValue);
+// console.log(nums);
+
+//  at --> this method works with negaive index also
+// let nums = [110,2,3,4,5,6]
+// console.log(nums.at(2));
+//-----------------------------------------------------------------------------------------------------------------
+//  "High-order function" --> if we are able to put function inside function that is called high order functuon
+//  high-order function's are --> map, reduce, filter
+
+//  map method --> Create new array from originl array by applying transformation function
+
+// let salaries = [3000,5000,8000,6000,9000]
+
+// let newSalaries = salaries.map(salary => {
+//     let incrementedAmount = salary/2
+//     return salary + incrementedAmount
+// })
+// console.log(newSalaries);
+// and in map the return array length will be same as original array length
+
+
+//  "Filter method"
+// let gifts = ["watch","iphone","laptops","car","bike"]
+
+// console.log(gifts);
+
+// let filteredGifts = gifts.filter(gift => {
+//     if(gift == "iphone" || gift == "laptops") {
+//         return gift
+//     }
+// })
+
+// it return new array
+// console.log(filteredGifts);
+
+
+//  "Reduce method"
+
+// "find method"
+//  this method either return true if match is found otherwise it will return UNDEFINED
+//  whenever have to find something from array object we should use find method
+//  and if there are two objects with same properties then it will return the first match
+//  and this method returns the whole object if match found
+// let students = [
+//     {id:1, name:"alex"},{id:2, name:"bob"}
+// ]
+
+// let result = students.find(student => {
+//     return student.id == 1
+// })
+// console.log(result);
+
+
+// "findIndex method"
+// as name suggest this method return index if match found
+// and if not found then it will return -1
+
+
+//  "some" and "every" method
+//  some  --> method return true if any array element pass the test
+
+//  every  --> method return true if all elements pass the test
+
+// some
+
+let scores = [10,20,40,50,70]
+
+let result = scores.some(score => {
+    return score > 50 
+})
+console.log("SOME METHOD", result);
+
+
+//  every method
+let newScores = [20,30,50,36]
+
+let results = newScores.every(score => {
+    return score > 10
+})
+
+console.log("EVERY METHOD", results);
 
