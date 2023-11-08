@@ -374,16 +374,78 @@
 // getting html elements using querySelector/All
 // querySelector returns -> first element that match css selector
 // to get all matched element we use querySelectorAll
+// ----------------------------------------------------------------------------------------------
+// updating and changing content
+// innerText
+// -->it will give me only selected text erespective of what changes i have made to that particular 
+// html element
+// let content = document.querySelector('.content')
+// console.log(content.innerText);
+
+// innerHtml
+// --> it will give me whole html with the changes i have done to html content
+// --> suppose if i have given space then it will preserve that space and provide the complete html tag with space
+// console.log(content.innerHTML);
+//------------------------------------------------------------------------------------------------------------------
+// getting and setting attribute of element
+// getAttribute
+// let youtubeLink = document.querySelector("a")
+// console.log(youtubeLink);
+// console.log(youtubeLink);
+// console.log(youtubeLink.getAttribute("href"));
+
+// setAttribute
+// console.log(youtubeLink.setAttribute("href","https://www.amazon.in"));
+// console.log(youtubeLink.innerText = "youtube changes to amazon india");
+//------------------------------------------------------------------------------------------------------------------
+// accessing the parent,child and sibling elements
+
+// let parentElements = document.querySelector(".content")
+// console.log(parentElements.children);
+//------------------------------------------------------------------------------------------------------------------
+// Events basics (click event)
+
+// let eventElement = document.querySelector(".clickMe")
+// console.log(eventElement);
+
+// eventElement.addEventListener("click",function () {
+//     console.log("i am clicked");
+// })
 
 
+// let elements = document.querySelectorAll("li")
+// console.log(elements);
+
+// elements.forEach(element => {
+//     element.addEventListener('click',e => {
+//         console.log(e.target);
+//         e.target.style.textDecoration = "line-through"
+//     })
+// });
+//----------------------------------------------------------------------------------------------------------------
+// remove element
+// let elements = document.querySelectorAll("li")
+// console.log(elements);
+
+// elements.forEach(element => {
+//     element.addEventListener('click',e => {
+//         console.log(e.target);
+//         e.target.remove()  //this function will remove element 
+//     })
+// });
 
 
+// add/create element
 
+// const ul = document.querySelector("ul")
 
+// let button = document.querySelector(".clickMe")
 
-
-
-
-
+// button.addEventListener("click", function(){
+//     let li = document.createElement('li')
+//     li.textContent = "add me"
+//     ul.append(li)
+// })
+//-----------------------------------------------------------------------------------------------------------------
 
 
