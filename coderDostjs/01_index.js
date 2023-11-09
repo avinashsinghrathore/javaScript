@@ -541,21 +541,79 @@
 //  every  --> method return true if all elements pass the test
 
 // some
+// let scores = [10,20,40,50,70]
 
-let scores = [10,20,40,50,70]
-
-let result = scores.some(score => {
-    return score > 50 
-})
-console.log("SOME METHOD", result);
+// let result = scores.some(score => {
+//     return score > 50 
+// })
+// console.log("SOME METHOD", result);
 
 
 //  every method
-let newScores = [20,30,50,36]
+// let newScores = [20,30,50,36]
 
-let results = newScores.every(score => {
-    return score > 10
-})
+// let results = newScores.every(score => {
+//     return score > 20
+// })
+// console.log("EVERY METHOD", results);
 
-console.log("EVERY METHOD", results);
 
+//  "flat" method
+//  it create a new array with the elements of the subarrays
+//  concatinated into it
+// let arr = [10,20,30,[40,50,60],70,80]
+// console.log("Array elements before flat",arr);  // no effect on original array
+// let result = arr.flat()  // by default 1(depth value) value
+// console.log("array element after flt method",result);
+//-----------------------------------------------------------------------------------------------------------------------------
+//  "DATE and TIME"
+
+//  date object always carray both "date" and "time"
+// let currentDate = new Date() 
+// console.log(currentDate);
+
+//  using timestamp(integer number reresent in 'ms' from 1-1-1970)
+//  let currentDate new Date(86400000)  // 0 is time in ms
+//  1 day = 24 * 60 * 60 = 86400000ms
+//  console.log(currentDate) 
+
+//  advance date and time method
+// let currentDateAndTime = new Date()
+// console.log(currentDateAndTime);
+
+// //  get fullyear
+// console.log(currentDateAndTime.getFullYear());
+
+// // get  months
+// console.log(currentDateAndTime.getMonth()); // it start from 0 indexing to 11
+
+// // get date
+// console.log(currentDateAndTime.getDate());
+
+// // get day
+// console.log(currentDateAndTime.getDay());  // it takes 0 -> sunday, 1 -> monday .....
+//-------------------------------------------------------------------------------------------------------------------------
+//  "Local storage"
+// localStorage.setItem("passion","progammer")
+// localStorage.setItem("age",24)
+// console.log(localStorage);
+
+//  get item from local storage
+// console.log(localStorage.getItem("passion"));
+// console.log(localStorage);
+
+//  remove item
+// localStorage.removeItem("passion")
+// console.log(localStorage);
+//-------------------------------------------------------------------------------------------------------------------------
+//  Object Oriented programming
+
+//  constructor function and the "new" operator
+
+//  we can not use arrow function as constructor
+//  call "constructor" function using "new" keyword
+
+// 1    new {object} created
+// 2    "this" = {object}
+// 3    onject linked to prototype
+// 4    functional automatically return {object}
