@@ -609,6 +609,7 @@
 //  Object Oriented programming
 
 //  constructor function and the "new" operator
+//  getter and setter method
 
 //  we can not use arrow function as constructor
 //  call "constructor" function using "new" keyword
@@ -617,3 +618,120 @@
 // 2    "this" = {object}
 // 3    onject linked to prototype
 // 4    functional automatically return {object}
+
+//  class declaration
+
+// class Car {
+//     constructor(color,model) {
+//        this.color = color
+//        this.model = model 
+//     }
+//     startEngine() {
+//         console.log("this is strat method");
+//     }
+//     brakEngine() {
+//         console.log("this is break engine method");
+//     }
+
+//     // accessing method -> getter and setter 
+//     get _startEngine() {
+//         console.log("this is start using get method");
+//     }
+// }
+
+// let honda = new Car("civic", 2023)
+// let tata = new Car("harrier",2022)
+// console.log(honda,tata);
+// honda.startEngine() //accessing function
+// tata.brakEngine()   //accessing function
+// honda._startEngine  //accessing as property
+
+//  static method
+// Car.braekMethod = function(params) {
+//     console.log("this is static break method");
+// }
+
+// honda.braekMethod()  // this will give error
+// Car.braekMethod() // static method works at class level or constructor and it doesn't work inside the constructor instance
+
+
+//  inheritence
+
+//  parent class
+// class Car {
+//     constructor(color,model) {
+//         this.color = color
+//         this.model = model
+//     }
+//     startEngine() {
+//         console.log("this is start engine method");
+//     }
+// }
+
+// let honda = new Car("civic", 2023)
+// console.log(honda);
+//  child class
+// class Bike extends Car {
+//     constructor(color,model,engineCapacity) {
+//         super(color,model) 
+//         this.engineCapacity = engineCapacity
+//     }
+// }
+
+// let enfield = new Bike("interceptor",2020)
+// console.log(enfield);
+// let royalEnfield = new Bike("interceptor",2020,500)
+// console.log(royalEnfield);
+//-----------------------------------------------------------------------------------------------------------------------
+//  why we should use "Class" instead of "Object"
+
+
+// if using object ---->
+// var person = {
+//     // name: "avinash",
+//     age: 25,
+//     address: "bangalore",
+//     // phone: 8867769008,
+// }
+
+// var person1 = {
+//     // fullName: "aarav singh",     //this property got mismatch from above one  
+//     age: 9,
+//     address: "gandhidham",
+//     // mobile: 1123456789,      // in above it is declare as phone but here it is phone so missmatch in properties
+// }
+
+
+//  missmatch can be handle in class 
+//  using class ---->
+
+// class Person{
+//     constructor(name){
+//         this.name = name
+//     }
+// }
+
+// let p1 = new Person("avinash")
+// let p2 = new Person("aarav")
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+//  Asynchronous Javascript
+
+//  Async code example
+// console.log(1);
+// console.log(2);
+
+// //  async code
+// setTimeout(() => {
+//     console.log("call back function will run after 3 second");
+// },3000)
+// //  it will not block the lower line of codes to execute
+// //  and settimeout will be called after 3 sec and it will pass the other lines to execute
+// console.log(3);
+// console.log(4);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+//  "HTTP response status code"
+//  Information response  (100 - 199)
+//  Successful response (200 - 299)
+//  Redirection message  (300 - 399)
+//  Client error response  (400 - 499)
+//  Server error response  (500 - 599)
