@@ -713,7 +713,7 @@
 
 // let p1 = new Person("avinash")
 // let p2 = new Person("aarav")
-//----------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
 //  Asynchronous Javascript
 
 //  Async code example
@@ -735,3 +735,60 @@
 //  Redirection message  (300 - 399)
 //  Client error response  (400 - 499)
 //  Server error response  (500 - 599)
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+//  Promise
+// let getSomething = () => {
+//     return new Promise((resolve,reject) => {
+//         resolve("Some data")
+//     })
+// }
+
+// getSomething().then((data) => {
+//     console.log(data);
+// }) .catch((error) => {
+//     console.log(error);
+// })
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+// "Destructuring the array"
+
+// let hotel = {
+//     name: "ramada",
+//     location: "bangalore near jp nagar",
+//     category: ["desi indian","spicy-indian","chinees","thai","susi"]
+// }
+
+// console.log(hotel);
+
+// let items = [10,20,30,40]
+// console.log(items);
+// let x = items[0]
+// let y = items[1]
+// let z = items[2]
+// let m = items[3]
+// console.log(x,y,z,m);
+
+//  destructuring
+// let [x,y,z,m] = items
+// console.log(x,y,z,m);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+// "Spread operator"(unpacking of array elements)
+
+// let hotel = {
+//     name: "Taj",
+//     location: "Bangalore",
+//     mainMenu: ["indian-spicy","chinees","thai"],
+//     openingHours: {
+//         sunday:{open:"09.00AM",class:"11:00PM"},
+//         monday:{open:"10.00AM",class:"10:00PM"}
+//     }
+// }
+
+// let nums = [2,4,6,8]
+// console.log(nums);
+// console.log(...nums);
+
+//  usecase
+// let newArray = [7,9,10,...nums]
+// let newArray = [...nums,10,11,12] 
+// console.log(newArray);
+
